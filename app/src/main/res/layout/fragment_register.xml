@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Landing.RegisterFragment"
+    android:id="@+id/registerFragment"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_medium"
+        android:id="@+id/registerPage">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#FFFFFF"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#FFFFFF"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            >
+
+            <com.xwray.passwordview.PasswordView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#FFFFFF"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            >
+
+            <com.xwray.passwordview.PasswordView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reconfirm Password" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/registerNow"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74CDD7"
+            android:text="Register" />
+
+    </LinearLayout>
+
+</FrameLayout>

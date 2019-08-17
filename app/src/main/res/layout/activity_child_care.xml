@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BookNanny.ChildCare">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/opt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Events or Birthday Parties"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/opt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Overnight Stays"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/opt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="At Home while parents are out."
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/opt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Put Children to Bed"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/opt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="With a parent at Home"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/opt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="With a parent while they shop"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/opt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="With a parent at a beauty salon"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/opt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Sleep Training"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/opt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Baby Nurse"
+            android:onClick="onCheckboxClicked"/>
+
+        <Button
+            android:id="@+id/nextChildCare"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74CDD7"
+            android:text="Next" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

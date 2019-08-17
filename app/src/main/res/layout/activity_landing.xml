@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Landing.Landing"
+    android:background="@color/colorPrimary">
+
+
+    <ImageView
+        android:layout_margin="@dimen/margin_xlarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hands"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/registerLogin"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Now "
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:textSize="21sp"/>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/register"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74CDD7"
+            android:text="Register" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_medium">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:cardCornerRadius="@dimen/margin_xlarge"
+                android:layout_margin="@dimen/margin_medium"
+                android:elevation="@dimen/margin_small">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/facebook"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:cardCornerRadius="@dimen/margin_xlarge"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="@dimen/margin_small">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/google"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login here!"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:textSize="14sp"/>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/login"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74CDD7"
+            android:text="Login" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_margin="@dimen/margin_medium"
+        android:id="@+id/registerPage">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#FFFFFF"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#FFFFFF"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            >
+
+            <com.xwray.passwordview.PasswordView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#FFFFFF"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            >
+
+            <com.xwray.passwordview.PasswordView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reconfirm Password" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/registerNow"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74CDD7"
+            android:text="Register" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_medium"
+        android:visibility="gone"
+        android:id="@+id/loginPage">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#FFFFFF"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="#000000"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            >
+
+            <com.xwray.passwordview.PasswordView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/loginNow"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74CDD7"
+            android:text="Register" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

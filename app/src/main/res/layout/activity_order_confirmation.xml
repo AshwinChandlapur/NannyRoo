@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BookNanny.OrderConfirmation">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:layout_margin="@dimen/margin_medium"
+        android:text="Request Sent"
+        android:gravity="center"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_small"
+        app:cardElevation="@dimen/margin_small"
+        android:layout_margin="@dimen/margin_medium"
+        app:cardBackgroundColor="@color/colorAccent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_medium"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:textColor="@color/white"
+            android:text="Average Wait time for confirmation is 60 min. We will notify you on email and SMS when the order is confirmed."/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/orderConfirmation"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_marginEnd="@dimen/margin_xlarge"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#74CDD7"
+        android:text="Return" />
+
+
+
+
+</LinearLayout>

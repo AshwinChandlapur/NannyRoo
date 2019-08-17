@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".BookNanny.Services">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Which Service do you want?"
+        android:textSize="21sp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/radioService">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Time"
+            android:id="@+id/oneTime"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Service"
+            android:id="@+id/weekly"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/servicesTypes">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Care"
+            android:id="@+id/childcare"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driving"
+            android:id="@+id/driving"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25dp" />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutors"
+            android:id="@+id/tutors"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/next3"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_marginEnd="@dimen/margin_xlarge"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#74CDD7"
+        android:text="Next" />
+
+
+
+
+
+</LinearLayout>
