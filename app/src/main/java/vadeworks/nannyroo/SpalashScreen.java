@@ -17,7 +17,7 @@ public class SpalashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_spalash_screen);
         getSupportActionBar().hide();
 
-
+        // Another COmment Added.
 
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
