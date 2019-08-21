@@ -24,6 +24,7 @@ public class OrderConfirmation extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OrderConfirmation.this, MainActivity.class);
+                // Comment Added...
                 startActivity(intent);
             }
         });
