@@ -34,6 +34,6 @@ public class SpalashScreen extends AppCompatActivity {
             }
         }, 2000);
 
-
+// 4th comment I made Liza
     }
 }
