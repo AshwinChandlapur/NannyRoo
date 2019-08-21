@@ -21,6 +21,9 @@ public class SpalashScreen extends AppCompatActivity {
 
         // Another COmment Added.
 
+
+        // Another Comment :)
+
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
